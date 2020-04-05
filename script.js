@@ -11,7 +11,6 @@ var currentMomentDate = moment().format("MMM Do YY");
 $(document).ready(function() {
     function displayDate() {  
     $("#currentDay").text(currentMomentDate);
- console.log(this);
 };
 displayDate();
 
@@ -23,23 +22,6 @@ function calendar() {
 
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 });
    

@@ -30,15 +30,33 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-        <div id="scheduler"></div>
-    <div class="row">
 
-    </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <!-- The scope attribute specifies that this is a header for a column -->
+            <th scope="col">Day</th>
+            <th scope="col">Item</th>
+            <th scope="col">Save</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>This is where you will leave your calendar items and store them</td>
+            <td>Save/Clear buttons</td>
+          </tr>
+          <!-- Insert additional movie rows here -->
+        </tbody>
+      </table>
+      <!-- <div class="row"></div>
+        <div id="scheduler"></div> -->
       <!-- Timeblocks go here -->
     </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 
   </body>
 </html>
