@@ -35,16 +35,21 @@
         <thead>
           <tr>
             <!-- The scope attribute specifies that this is a header for a column -->
-            <th scope="col">Day</th>
-            <th scope="col">Item</th>
-            <th scope="col">Save</th>
+            <th scope="col" class="time-block">Hour</th>
+            <th scope="col" class="textarea">This is where you will leave your calendar items and store them</th>
+            <th scope="col" class="saveBtn">Save/Clear Butons</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Monday</td>
-            <td>This is where you will leave your calendar items and store them</td>
-            <td>Save/Clear buttons</td>
+          <tr class="row">
+            <td class="time-block">9AM</td>
+            <td class="textarea">
+              <form id="9am-form" methood="post">
+                <input type="text" class="description" id="9am-text" />
+              </form>
+            </td>
+            <td class="rightColumn"><button class="saveBtn">Save Event</button>
+            </td>
           </tr>
           <!-- Insert additional movie rows here -->
         </tbody>

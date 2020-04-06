@@ -6,6 +6,8 @@
 
 var currentMomentDate = moment().format("MMM Do YY"); 
 
+var hours = ["10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM"]
+var textDesc = ["9TD", "10TD", "11TD", "12TD", "1TD", "2TD", "3TD", "4TD", "5TD"]
 
 //functions
 $(document).ready(function() {
@@ -17,9 +19,15 @@ displayDate();
 
 calendar();
 function calendar() {
-    var tableCalendar = $("<table>");
-    var tableday = $("<tr>");
-
+    for(var i = 0; i<hours.length; i++){
+    var newTimeBlock= $("<td class=time-block>");
+    newTimeBlock.addClass(".time-block hour");
+    newTimeBlock.text(hours[i]);
+    $(".time-block").append(newRow);
+    };
+    for(var i=0; i<textDesc.length; i++){
+        var newtextDesc = $("<td class=textarea>")
+    }
     
 }
 
