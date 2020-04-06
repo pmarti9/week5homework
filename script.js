@@ -28,7 +28,9 @@ function calendar() {
     for(var i=0; i<textDesc.length; i++){
         var newtextDesc = $("<td class=textarea>")
     }
-    
+    newtextDesc.attr("textarea");
+    $(newtextDesc).append(".textarea");
+    newtextDesc===textDesc;
 }
 
 });
